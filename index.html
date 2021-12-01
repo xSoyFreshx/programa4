@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Programa 4</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/vis/dist/vis.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Programa 4<br />
+						Máquina de Turing</h1>
+						
+						<ul class="actions">
+							<li><a href="#date" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+				<!-- Main -->
+					<div id="main">
+							<article class="post featured">
+								<header class="major">
+									<span id="date" class="date">Noviembre 30, 2021</span>
+									<h2><a href="#labelPalabra">Máquina de Turing<br />
+									Para strings con caracteres "a" y "b"</a></h2>
+									<div class="fields">
+										<div class="field">
+											<span><strong>Ayuda</strong></span>
+											<ul>Caracteres aceptados
+
+												<li>a</li>
+												<li>b</li>
+												<li>Espacio en blanco " "</li>
+												<li>Posible cadena: abba babb</li>
+											</ul>
+											<label id="labelPalabra" for="palabra">Escribe una palabra:</label>
+											<div id="input-button">
+											<input type="text" name="palabra" id="palabra" minlength="1"  placeholder="Ten en cuenta la ayuda!" required />
+											</div>
+											<div id="button-input">
+												<button id="validar" class="logo" onclick="obtenerSimbolos()">Cargar</button>
+											</div>
+											<br/>
+											<br/>
+										</div>
+										<div>
+											<div style="float:left">Rápido</div>
+											<div style="float:right">Lento</div>
+										</div>
+										<div class="slidecontainer">
+  											<input type="range" min="1" max="1000" class="slider" id="myRange">
+  											<p>Tiempo de espera: <span id="time">0</span> segundos</p>
+										</div>
+										<div id="cinta" class="field">
+											<input id="inputCinta"type="text" name="cinta" readonly value="">
+										</div>
+
+										<br/>
+									</div>
+
+									<!-- The Modal -->
+									<div id="myModal" class="modal">
+										<!-- Modal content -->
+										<div class="modal-content">
+										  <div class="modal-header">
+										    <span class="close">&times;</span>
+											<h2 id="parrafoValidacion" style="color:white"></h2>
+										  </div>
+										  <div class="modal-body">
+										    
+										  </div>
+										</div>
+									</div>
+								</header>
+							</article>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" src="assets/vis/dist/vis.js"></script>
+			<script src="assets/js/automata.js"></script>
+
+	</body>
+</html>
